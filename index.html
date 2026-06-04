@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AZ Travels</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     
@@ -16,17 +17,15 @@
             
             <div class="logo-header-section">
                 <!-- logo and about -->
-                <div class="logo-section">
-
-                    <div class="logo">
-                        <h1>AZ</h1>
-                        <h6>TRAVELS</h6>
-                    </div>
+                <div class="logo">
+                    <h1>AZ</h1>
+                    <h6>TRAVELS</h6>
+                </div>
                 
+                <div class="about-booking-section">
                     <div class="about">
-
-                        <ul>
-                            <li><a href="#">Home</a></li>
+                        <ul class="logo-ul">
+                            <li><a href="#" class="active">Home</a></li>
                             <li><a href="#">Destinations</a></li>
                             <li><a href="#">Packages</a></li>
                             <li><a href="#">About Us</a></li>
@@ -34,15 +33,16 @@
                         </ul>
                     </div>
 
+                    <!-- button book section -->
+                    <div class="booking-section">
+                        <button class="green">
+                        Book  Now
+                        <span class="material-symbols-outlined">travel</span>
+                        </button>
+                    </div>
+
                 </div>
 
-                <!-- button book section -->
-                <div class="booking-section">
-                    <button class="green">
-                    Book Now
-                    <i class="fa-solid fa-plane-departure"></i>
-                    </button>
-                </div>
             </div>
 
             <!-- hero image section, rem to us 80vh and the image as background image -->
@@ -57,7 +57,7 @@
 
                 <div class="hero-button">
                     <button class="green">
-                        <i class="fa-solid fa-plane-departure"></i>
+                        <span class="material-symbols-outlined">travel</span>
                         Explore Destinations
                     </button>
 
@@ -68,100 +68,101 @@
                 </div>
             </div>
 
-            <!-- this is for the text below the image, popular destinations -->
-            <div class="hero-quote">
-                <h3>Popular Destinations</h3>
-                <div class="palm-divider">
-                    <i class="fa-solid fa-earth-africa"></i>
-                </div>
-            </div>
-
         </div>
 
         <div class="body-section">
 
-            image of the place and the explanation
             <div class="destination-section">
 
-                the image and the location
-                <div class="destinations">
+                <div class="destination title">
 
-                    <div class="destination-image-location">
-                        <div class="destination-image">
-                            <img src="./images/maldives.jpg"> 
-                        </div>
-
-                        <div class="destination-location">
-                            <div class="location-icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-
-                            <div class="location-name">
-                                <h2>Maldives</h2>
-                                <h5>From $899</h5>
-                            </div>
+                    <div class="hero-quote">
+                        <h3>Popular Destinations</h3>
+                        <div class="palm-divider">
+                            <i class="fa-solid fa-earth-africa"></i>
                         </div>
                     </div>
+                    
+                    <div class="destinations">
 
-                    <div class="destination-image-location">
-                        <div class="destination-image">
-                            <img src="./images/bali.jpg"> 
-                        </div>
-
-                        <div class="destination-location">
-                            <div class="location-icon">
-                                <i class="fa-solid fa-location-dot"></i>
+                        <div class="destination-image-location">
+                            <div class="destination-image">
+                                <img src="./images/maldives.jpg"> 
                             </div>
 
-                            <div class="location-name">
-                                <h2>Bali</h2>
-                                <h5>From $699</h5>
+                            <div class="destination-location">
+                                <div class="location-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                                <div class="location-name">
+                                    <h2>Maldives</h2>
+                                    <h5>From $899</h5>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="destination-image-location">
+                            <div class="destination-image">
+                                <img src="./images/bali.jpg"> 
+                            </div>
+
+                            <div class="destination-location">
+                                <div class="location-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                                <div class="location-name">
+                                    <h2>Bali</h2>
+                                    <h5>From $699</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="destination-image-location">
+                            <div class="destination-image">
+                                <img src="./images/dubai.jpg"> 
+                            </div>
+
+                            <div class="destination-location">
+                                <div class="location-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                                <div class="location-name">
+                                    <h2>Dubai</h2>
+                                    <h5>From $999</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="destination-image-location">
+                            <div class="destination-image">
+                                <img src="./images/zanzibar.jpg"> 
+                            </div>
+
+                            <div class="destination-location">
+                                <div class="location-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                                <div class="location-name">
+                                    <h2>Zanzibar</h2>
+                                    <h5>From $799</h5>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-
-                    <div class="destination-image-location">
-                        <div class="destination-image">
-                            <img src="./images/dubai.jpg"> 
-                        </div>
-
-                        <div class="destination-location">
-                            <div class="location-icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-
-                            <div class="location-name">
-                                <h2>Dubai</h2>
-                                <h5>From $999</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="destination-image-location">
-                        <div class="destination-image">
-                            <img src="./images/zanzibar .jpg"> 
-                        </div>
-
-                        <div class="destination-location">
-                            <div class="location-icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-
-                            <div class="location-name">
-                                <h2>Zanzibar</h2>
-                                <h5>From $799</h5>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
 
                 <!-- try using space-around for justify content -->
                 <div class="destination-explanation">
                     
                     <div class="destination-explanantion-container">
                         <div class="dest-exp-con-icon">
-                            <i class="fa-solid fa-plane-departure"></i>
+                            <span class="material-symbols-outlined">travel</span>
                         </div>
 
                         <div class="dest-exp-con-writeup">
