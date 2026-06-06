@@ -40,6 +40,8 @@
     --border-radius-full: 1000rem;
 }
 
+/* Desktp view */
+
 * {
     margin: 0;
     padding: 0;
@@ -74,6 +76,13 @@ section {
     align-items: center;
     padding: 0.2rem 2rem;
 }
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
 
 .logo {
     width: auto;
@@ -768,4 +777,111 @@ section {
     align-items: center;
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-light);
+}
+
+/* --- Tablet View: Max Width 1140px --- */
+@media screen and (max-width: 1140px) {
+    .traveler-enquiry {
+        padding: 1rem 2rem; /* Reduce side padding for footer */
+        height: auto;
+        gap: 1rem;
+        flex-wrap: wrap; /* Allow footer items to wrap */
+    }
+
+    .destination-explanation {
+        padding: 0.5rem 1rem;
+        gap: 1rem;
+    }
+}
+
+/* --- Mobile View: Max Width 480px --- */
+@media screen and (max-width: 480px) {
+    /* Header adjustments */
+    .logo-header-section {
+        padding: 0.5rem 1rem;
+    }
+
+    .about-booking-section {
+        display: none; /* Consider a hamburger menu for mobile */
+    }
+
+    /* Hero section */
+    .hero-writeup-button {
+        height: auto;
+        padding-bottom: 2rem;
+        clip-path: none; /* Remove clip path on mobile for better flow */
+    }
+
+    .hero-button {
+        flex-direction: column;
+        padding-left: 2rem;
+        width: 100%;
+    }
+
+    /* Grid layout */
+    .destinations {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-image img {
+        width: 100%; /* Make images full width */
+    }
+
+    /* Explanation section */
+    .destination-explanation {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    /* Traveler section */
+    .traveler-enquiry {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .traveler-quicklink{
+        width: 100%;
+        align-items: center;
+    } 
+
+
+    .traveler-top-destinations{
+        width: 100%;
+        align-items: center;
+    }
+
+    .traveler-contact-info{
+        width: 100%;
+        align-items: center;
+    }
+
+    .traveler-socials {
+        width: 100%;
+        align-items: center;
+    }
+
+    .comment-rating {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Logic to show/hide the UL when toggled */
+    .logo-ul.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 2rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }
