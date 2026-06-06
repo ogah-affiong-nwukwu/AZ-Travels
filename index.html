@@ -21,8 +21,12 @@
                     <h1>AZ</h1>
                     <h6>TRAVELS</h6>
                 </div>
+
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 
-                <div class="about-booking-section">
+                <div class="about-booking-section" id="nav-menu">
                     <div class="about">
                         <ul class="logo-ul">
                             <li><a href="#" class="active">Home</a></li>
@@ -41,10 +45,6 @@
                         </button>
                     </div>
 
-                </div>
-
-                <div class="menu-toggle" id="mobile-menu">
-                    <i class="fa-solid fa-bars"></i>
                 </div>
 
             </div>
@@ -306,5 +306,15 @@
 
         </div>
     </section>
+
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>

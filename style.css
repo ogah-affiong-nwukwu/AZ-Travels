@@ -782,10 +782,10 @@ section {
 /* --- Tablet View: Max Width 1140px --- */
 @media screen and (max-width: 1140px) {
     .traveler-enquiry {
-        padding: 1rem 2rem; /* Reduce side padding for footer */
+        padding: 1rem 2rem;
         height: auto;
         gap: 1rem;
-        flex-wrap: wrap; /* Allow footer items to wrap */
+        flex-wrap: wrap;
     }
 
     .destination-explanation {
@@ -796,20 +796,19 @@ section {
 
 /* --- Mobile View: Max Width 480px --- */
 @media screen and (max-width: 480px) {
-    /* Header adjustments */
+    
     .logo-header-section {
         padding: 0.5rem 1rem;
     }
 
     .about-booking-section {
-        display: none; /* Consider a hamburger menu for mobile */
+        display: none; 
     }
 
-    /* Hero section */
     .hero-writeup-button {
         height: auto;
         padding-bottom: 2rem;
-        clip-path: none; /* Remove clip path on mobile for better flow */
+        clip-path: none;
     }
 
     .hero-button {
@@ -818,24 +817,21 @@ section {
         width: 100%;
     }
 
-    /* Grid layout */
     .destinations {
         flex-direction: column;
         align-items: center;
     }
 
     .destination-image img {
-        width: 100%; /* Make images full width */
+        width: 100%;
     }
 
-    /* Explanation section */
     .destination-explanation {
         flex-direction: column;
         align-items: flex-start;
         padding: 1rem;
     }
 
-    /* Traveler section */
     .traveler-enquiry {
         flex-direction: column;
         padding: 1rem;
@@ -883,5 +879,18 @@ section {
 
     .menu-toggle {
         display: block;
+    }
+
+    
+    .about-booking-section.active {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 2rem;
+        z-index: 100;
     }
 }
