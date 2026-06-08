@@ -823,6 +823,10 @@ section {
     }
 
     .destination-image img {
+        width: 100%;
+    }
+
+    .destination-image-location{
         width: 60%;
     }
 
