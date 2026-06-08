@@ -823,7 +823,7 @@ section {
     }
 
     .destination-image img {
-        width: 100%;
+        width: 60%;
     }
 
     .destination-explanation {
@@ -865,7 +865,7 @@ section {
         text-align: center;
     }
 
-    /* Logic to show/hide the UL when toggled */
+    /* To show/hide the UL when toggled */
     .logo-ul.active {
         display: flex;
         flex-direction: column;
@@ -887,10 +887,30 @@ section {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        left: 0;
-        width: 100%;
-        background: white;
-        padding: 2rem;
+        right: 0;
+        width: 30%;
+        background: var(--button-primary-color);
+        padding: 0.5rem;
         z-index: 100;
+    }
+
+    .about-booking-section.active .logo-ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        list-style: none;
+        text-align: left;
+        color: var(--on-primary-button-color);
+    }
+
+    .about-booking-section.active li{
+        border-bottom: 1px solid var(--bg-glass-white);
+        padding: 0.25rem;
+        margin: 0;
+    }
+
+    .booking-section button{
+        background-color: var(--on-primary-button-color);
+        color: var(--button-primary-color);
     }
 }
